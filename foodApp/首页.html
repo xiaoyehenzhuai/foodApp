@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="外卖首页/basic.css">
+    <link rel="stylesheet" href="外卖首页/index.css">
+    <meta name="viewport"
+          content="width=device-width">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #banner {
+            width: 7.02rem;
+            height: 4rem;
+            border: 1px solid red;
+            margin:0.4rem 0.24rem;
+            position: relative;
+
+        }
+
+        #imageBox {
+            width: 7.02rem;
+            height: 4rem;
+        }
+
+        #imageBox > li {
+            width: 7.02rem;
+            height: 4rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 0.8s;
+            opacity: 0.6; /*透明度*/
+        }
+
+        #imageBox > li.active {
+            z-index: 1;
+            opacity: 1;
+        }
+
+        #imageBox > li > a {
+            display: block;
+            width: 7.02rem;
+            height: 4rem;
+        }
+
+        #imageBox > li > a > img {
+            width: 7.02rem;
+            height: 4rem;
+            display: block;
+        }
+
+        #pagerBox {
+            width: 100px;
+            height: 10px;
+            position: absolute;
+            right: 20px;
+            bottom: 30px;
+            z-index: 99;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #pagerBox>li{
+            width:6px;
+            height:6px;
+            background:orange;
+            border: 2px #ccc solid;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline;
+        }
+        #pagerBox>li.active{
+
+            background:#eee;
+            border: 2px #48ee09 solid;
+
+        }
+
+        #prev{
+            left:234px;
+            background-position: -83px 0;
+        }
+        #next{
+            right:0;
+            background-position: -125px 0;
+        }
+        #prev:hover{
+            background-position: 0 0;
+        }
+        #next:hover{
+            background-position: -43px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+<header id="header">
+
+
+
+    <div class="container">
+        <div class="topBar">
+            <div class="scanBox1">
+                <img src="img/saoyisao.png" alt="">
+            </div>
+            <div class="searchBox">
+                <img src="img/sousuo.png" alt="">
+                <input type="text" placeholder="老火锅">
+                <img src="img/paizhao.png" alt="">
+            </div>
+            <div class="scanBox">
+                <img src="img/saoyisao.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="banner">
+        <ul id="imageBox"> <!--图片盒子-->
+            <li class="active"><a href=""><img src="img/lunbo1.png" alt=""></a></li>
+            <li><a href=""><img src="img/lunbo2.png" alt=""></a></li>
+        </ul>
+        <ul id="pagerBox">  <!--轮播点盒子-->
+            <li class="active"></li>
+            <li></li>
+        </ul>
+    </div>
+    <script>
+        let pagers = document.querySelectorAll("#pagerBox>li");   /*点*/
+        let imgs = document.querySelectorAll("#imageBox>li");     /*图*/
+        let banner = document.querySelector("#banner");
+        let flag = false;
+        //console.log(banner);
+        // console.log(pagers);
+        // console.log(imgs);
+        pagers.forEach(function (ele, index) {
+            ele.onclick = function () {
+                flag = true;
+                for (let i = 0; i < imgs.length; i++) {
+                    imgs[i].classList.remove("active");
+                    pagers[i].classList.remove("active");
+                }
+                imgs[index].classList.add("active");
+                pagers[index].classList.add("active");
+            }
+        });
+        let now = 0;
+
+        function move() {
+            {
+                now++;
+                if (now === imgs.length) {
+                    now = 0;
+                }
+                for (let i = 0; i < imgs.length; i++) {
+                    imgs[i].classList.remove("active");
+                    pagers[i].classList.remove("active");
+                }
+                imgs[now].classList.add("active");
+                pagers[now].classList.add("active");
+            }
+        }
+
+        /*    let st = setInterval(function () {
+                now++;
+                if (now === imgs.length) {
+                    now = 0;
+                }
+                for (let i = 0; i < imgs.length; i++) {
+                    imgs[i].classList.remove("active");
+                    pagers[i].classList.remove("active");
+                }
+                imgs[now].classList.add("active");
+                pagers[now].classList.add("active");
+            }, 3000);*/
+        let st = setInterval(move, 3000);
+        banner.onmouseenter = function () {
+            clearInterval(st);
+        };
+        banner.onmouseleave = function () {
+            if (flag === true) {
+                return;
+            }
+            st = setInterval(move, 3000);
+        };
+
+    </script>
+
+
+    <div class="box2">
+        <ul>
+            <li><img src="img/meishi.png" alt=""></li>
+            <li><img src="img/shuiguo.png" alt=""></li>
+            <li><img src="img/yinpin.png" alt=""></li>
+            <li><img src="img/yexiao.png" alt=""></li>
+            <li><img src="img/dapaitehui.png" alt=""></li>
+            <li><img src="img/difangmeishi.png" alt=""></li>
+            <li><img src="img/chaoshibianli.png" alt=""></li>
+            <li><img src="img/langmanxianhua.png" alt=""></li>
+        </ul>
+        <div class="box21">
+            <div class="box22">---</div>
+        </div>
+    </div>
+    <div class="box51">
+        <div class="box52">
+            <div class="box53">
+
+                    限时
+                    <img src="img/53.png" alt="">
+                    抢购
+
+            </div>
+            <div class="box54">
+                <span>进行</span>
+                <span>19:00</span>
+                <span>结束</span>
+            </div>
+            <div class="box55">
+                <span>02</span>
+                <span>:</span>
+                <span>35</span>
+                <span>:</span>
+                <span>29</span>
+            </div>
+        </div>
+    </div>
+    <div class="box61">
+        <div class="box62">
+            <img src="img/z1.png" alt="">
+        </div>
+        <div class="box63">
+            <img src="img/z2.png" alt="">
+        </div>
+    </div>
+    <div class="box71">
+        <div class="box72">
+
+        </div>
+        <ul class="box73">
+            <li>每日推荐</li>
+            <li>DAILY ROMMRNTDATION</li>
+        </ul>
+    </div>
+    <div class="box81">
+        <div class="box82">
+            <div class="box88">
+            <div class="box83">
+                <img src="img/81.png" alt="">
+            </div>
+            <div class="box84">
+                <ul>
+                    <li>
+                        <div><a href="">阿凡达小分菜</a></div>
+                    </li>
+                    <li><span>评分：4.4</span><span>月售1652</span><span>准时达 蜂鸟配送</span></li>
+                    <li><span>起送：18元</span><span>配送0.5元</span><span>24分钟 2.1km</span></li>
+                    <li><span>满12减2</span><span>品质联盟</span></li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="box88">
+                <div class="box83">
+                    <img src="img/82.jpg" alt="">
+                </div>
+                <div class="box84">
+                    <ul>
+                        <li>
+                            <div><a href="">阿凡达小分菜</a></div>
+                        </li>
+                        <li><span>评分：4.4</span><span>月售1652</span><span>准时达 蜂鸟配送</span></li>
+                        <li><span>起送：18元</span><span>配送0.5元</span><span>24分钟 2.1km</span></li>
+                        <li><span>满20减3</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box88">
+                <div class="box83">
+                    <img src="img/83.jpg" alt="">
+                </div>
+                <div class="box84">
+                    <ul>
+                        <li>
+                            <div><a href="">阿凡达小分菜</a></div>
+                        </li>
+                        <li><span>评分：4.4</span><span>月售1652</span><span>准时达 蜂鸟配送</span></li>
+                        <li><span>起送：18元</span><span>配送0.5元</span><span>24分钟 2.1km</span></li>
+                        <li><span>满20减3</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box88">
+                <div class="box83">
+                    <img src="img/84.png" alt="">
+                </div>
+                <div class="box84">
+                    <ul>
+                        <li>
+                            <div><a href="">阿凡达小分菜</a></div>
+                        </li>
+                        <li><span>评分：4.4</span><span>月售1652</span><span>准时达 蜂鸟配送</span></li>
+                        <li><span>起送：18元</span><span>配送0.5元</span><span>24分钟 2.1km</span></li>
+                        <li><span>满20减3</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="box91">
+        <ul>
+            <li>
+            <span><img src="img/91.png" alt=""></span>
+            <span><img src="img/92.png" alt=""></span>
+            <span><img src="img/93.png" alt=""></span>
+            <span><img src="img/94.png" alt=""></span>
+            </li>
+            <li class="box92">
+                <a class="93">首页</a><!--用：nth-child（1）设置第一个-->
+                <a>首页</a>
+                <a>首页</a>
+                <a>首页</a>
+            </li>
+        </ul>
+    </div>
+
+
+</header>
+</div>
+</body>
+</html>
