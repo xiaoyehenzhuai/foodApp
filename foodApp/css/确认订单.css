@@ -1,0 +1,260 @@
+body,html{
+    height: 100%;
+}
+.top{
+    width: 7.5rem;
+    height: 4.66rem;
+    background: #f65b0e;
+    padding-top: 0.2rem;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    height: 0.35rem;
+    width: 6.924rem;
+    margin:0 auto;
+    text-align: center;
+    color: #ffffff;
+    line-height: 0.35rem;
+    font-size: 0.36rem;
+}
+.header-return{
+    width: 0.35rem;
+    height: 0.35rem;
+    background: #ffffff;
+    border-radius: 50%;
+    float: left;
+}
+.share{
+    float: right;
+}
+#return{
+    font-family: iconfont;
+    font-size: 0.24rem;
+    color: #f87c3e;
+    float: left;
+    margin-left: 0.05rem;
+}
+#share{
+    font-family: iconfont;
+    font-size: 0.24rem;
+    color: #f87c3e;
+    float: left;
+    margin-left: 0.05rem;
+}
+.header-address{
+    width: 5.57rem;
+    height: 0.88rem;
+    margin-top: 0.49rem;
+    color: #ffffff;
+    text-align: left;
+}
+.address-choice{
+    font-size: 0.22rem;
+}
+.address-school{
+    margin-top: -0.05rem;
+    font-size: 0.24rem;
+}
+.address-person{
+    font-size: 0.22rem;
+    margin-top: -0.05rem;
+}
+#phone{
+    font-family: iconfont;
+}
+.header-time{
+    width: 7.02rem;
+    height: 1.53rem;
+    background: #ffffff;
+    border-radius: 0.1rem;
+    margin-top: 0.22rem ;
+    margin-left: -0.05rem;
+    padding-left: 0.34rem;
+}
+.expect-time{
+    width: 100%;
+    height: 0.83rem;
+    padding-top: 0.1rem;
+    margin-left: -0.05rem;
+}
+.expect-time p.specific-time{
+    font-size: 0.22rem;
+    color: #8d8d8d;
+}
+.expect-time span{
+    margin-left: 3.6rem;
+}
+#spread{
+    font-family: iconfont;
+
+}
+.special-note{
+    font-size: 0.18rem;
+    color:  #f23b3b;;
+    margin-left: -5rem;
+}
+#note{
+    font-family: iconfont;
+    font-size: 0.18rem;
+}
+#pay-style{
+    width: 100%;
+    height: 0.7rem;
+    border-top: 0.03rem dashed #e5e5e5;
+    line-height: 0.7rem;
+    color: #8d8d8d;
+    font-size: 0.22rem;
+    margin-left: -0.05rem;
+}
+#pay-style span{
+    margin-left: 4.6rem;
+}
+.order-form{
+    width: 7.04rem;
+    height: 3.54rem;
+    background: #ffffff;
+    position: absolute;
+    top: 3.98rem;
+    left: 0.24em;
+    border-radius: 0.1rem;
+}
+.order-form p.order-form-title{
+    font-size: 0.26rem;
+    color: #8d8d8d;
+    margin: 0.28rem 0 0 0.35rem;
+}
+.order-form1{
+    width: 7.02rem;
+    height: 1.1rem;
+    position: relative;
+    float: left;
+    margin-top: 0.28rem;
+}
+.order-form-img{
+    width: 0.82rem;
+    height: 0.82rem;
+    border-radius: 0.1rem;
+    background: #ffffff;
+    margin: 0.14rem 0 0 0.39rem;
+}
+.order-form-img img{
+    width: 100%;
+    height: 100%;
+}
+.order-form1 span{
+    /*float: left;*/
+    font-size: 0.22rem;
+    position:absolute;
+    left: 1.5rem;
+    top: 0.44rem;
+    color: #8d8d8d;
+}
+.multiply{
+    width: 0.24rem;
+    height: 0.24rem;
+    background: #f96f00;
+    border-radius: 50%;
+    position: absolute;
+    left: 3.31rem;
+    top: 0.47rem;
+    text-align: center;
+    line-height: 0.2rem;
+    font-size: 0.22rem;
+    color: #ffffff;
+}
+.order-form1 span.multiply-number{
+    float: left;
+    font-size: 0.22rem;
+    margin-left: 2.21rem;
+    color: #f96f00;
+}
+.order-form1 span.multiply-price{
+    font-size: 0.22rem;
+    color: #f23b3b;
+    position: absolute;
+    left: 6.1rem;
+    top: 0.45rem;
+}
+/*口味偏好价格*/
+.shop-lists{
+    width:7.5rem;
+    height: 100%;
+    background: #eeeeee;
+    padding-top: 4.05rem;
+    margin: 0 auto;
+}
+.total-price{
+    width: 7.02rem;
+    height: 1.1rem;
+    background: #ffffff;
+    margin: 0 auto;
+    border-radius: 0.1rem;
+    position: relative;
+}
+.total-price span.total{
+    font-size: 0.26rem;
+    position: absolute;
+    left: 0.39rem;
+    top: 0.35rem;
+    color: #8d8d8d;
+}
+.total-price span.price{
+    font-size: 0.3rem;
+    color: #f23b3b;
+    position: absolute;
+    top: 0.34rem;
+    left:5.88rem;
+}
+.price span.price-unit{
+    font-size: 0.2rem;
+}
+.red-packet{
+    width: 6.42rem;
+    height: 0.17rem;
+    margin: 0.08rem auto 0;
+    font-size: 0.18rem;
+    color: #f96f00;
+    display: flex;
+    justify-content: space-between;
+}
+.foot-remark{
+    width: 7.02rem;
+    height: 1.1rem;
+    border-radius: 0.1rem;
+    background: #ffffff;
+    margin: 0.3rem auto 0;
+}
+.list-container{
+    width: 6.35rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.24rem;
+    color: #8d8d8d;
+    line-height: 1.1rem;
+}
+#remark-choose{
+    font-family: iconfont;
+    font-size: 0.26rem;
+}
+.tableware{
+    margin-top: 0.26rem
+}
+#tableware-special{
+    font-size: 0.2rem;
+    color: #6df47d;
+}
+/*去支付*/
+.pay{
+    width: 3.58rem;
+    height: 0.53rem;
+    background: #f87c3e;
+    border-radius: 0.315rem;
+    margin: 0.24rem auto 0;
+    line-height: 0.53rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.26rem;
+}

@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size:100px;
+}
+@media (min-width:320px){
+    html{
+        font-size:42.6667px/*calc(100px*320/750)*/;
+    }
+}
+@media(min-width: 360px){
+    html{
+        font-size: 46px;
+    }
+}
+@media(min-width: 375px){
+    html{
+        font-size: 50px;
+    }
+}
+@media(min-width: 414px){
+    html{
+        font-size: 55.2px;
+    }
+}
+#header{
+    width:100%;
+}
+body{
+    font-size:12px;
+    background:rgba(0,0,0,0.8);
+}
+.zong{
+    width:7.5rem;
+    height:13.34rem;
+    background:#ffffff;
+
+
+    margin:0 auto;
+}
+.b1{
+    width:7.5rem;
+    height:2.94rem;
+    /*background: #02ffb8;*/
+    position:relative;
+}
+.b1 img{
+    width:7.5rem;
+    height:1.94rem;
+}
+.b2{
+    width:7.5rem;
+    height:1.5rem;
+    /*background:green;*/
+    top:1.44rem;
+    position:absolute;
+}
+.b21{
+    width:7.02rem;
+    height:1.45rem;
+    background: #ffffff;
+    box-shadow:0 0.08rem 0.3rem #eeeeee;
+    border-radius:0.1rem;
+    margin:0 auto;
+}
+.b21 img{
+    width:0.97rem;
+    height:0.97rem;
+    margin:0.24rem;
+    float:left;
+}
+.b23{
+    width:5.57rem;
+    height:1.45rem;
+    background: #fdff04;
+    float: right;
+    border-radius:0 0.1rem 0.1rem 0;
+}
+.b3{
+    width:7.5rem;
+    height:8.6rem;
+}
+.b31{
+    width:7.5rem;
+    height:6.8rem;
+    background: #eeeeee;
+    top:4.74rem;
+    position:absolute;
+}
+.b31 ul li{
+    width:7.02rem;
+    height:0.8rem;
+    background:#ffffff;
+    margin:0.4rem auto;
+}
+.b32{
+    width:5.02rem;
+    height:0.8rem;
+    background:red;
+    margin:0 auto;
+
+}
+.b32 span:nth-child(1){
+    float:left;
+    font-family: "苹方 中等";
+    font-size:0.32rem;
+    line-height: 0.32rem;
+    margin:0.24rem 0;
+}
+.b33{
+    width:0.8rem;
+    height:0.4rem;
+    background: green;
+    border-radius: 0.3rem;
+    float:right;
+    margin:0.2rem 0;
+    font-size:0.28rem;
+    font-family: "苹方 中等";
+    text-align:center;
+}
+
+.b4{
+    width:7.5rem;
+    height:0.4rem;
+    background:#ffffff;
+}
+.box91{
+    width:7.5rem;
+    height:1.48rem;
+    background:#ffffff;
+    margin:0 auto;
+}
+.box91 ul{
+    width:7.02rem;
+    height:1.48rem;
+    background: #ffffff;
+    margin:0 auto;
+}
+.box91 li{
+    background: #ffffff;
+}
+.box92 li{
+    background: #ffffff;
+}
+.box91 li span{
+    background: #ffffff;
+}
+.box92{
+    font-size:0.26rem;
+    line-height: 0.26rem;
+    background: #ffffff;
+}
+.box92 a{
+    margin:0 0.58rem;
+    background: #ffffff;
+    color: #666666;
+}
+
+.box92 a:nth-child(4){
+    color:#ffb20c;
+}
+
+.box91 ul li span img{
+    width:0.60rem;
+    height:0.60rem;
+    margin:0.24rem 0.545rem 0.14rem 0.545rem;
+    background: #ffffff;
+}

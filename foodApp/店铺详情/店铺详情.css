@@ -1,0 +1,357 @@
+.title-box{
+    height: 3.41rem;
+    width: auto;
+}
+.box11{
+    width:7.5rem;
+    height:6.67rem;
+    background: #eeeeee;
+    margin:0 auto;
+}
+.box11{
+    width:7.5rem;
+    height:5.47rem;
+    background: #eeeeee;
+    margin:0 auto;
+}
+.box12{
+    width:7.5rem;
+    height:1.2rem;
+    background: #02ffb8;
+}
+header{
+    width: 100%;
+    height: 1.64rem;
+    background: #f87c3e;
+    margin: 0 auto;
+    float: left;
+}
+.store-name{
+    height: 0.35rem;
+    width: 6.95rem;
+    margin: 0.21rem auto 0;
+    position: relative;
+}
+.title-icon{
+    width: 0.35rem;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffffff;
+    float: left;
+}
+#return{
+    font-family: iconfont;
+    font-size: 0.24rem;
+    margin:0.05rem 0 0 0.05rem;
+    color: #f87c3e;
+    float: left;
+}
+.title-text{
+    width: 2.83rem;
+    height: 0.35rem;
+    float: left;
+    margin-left: 1.69rem;
+    font-size: 0.36rem;
+    color: #ffffff;
+    line-height: 0.35rem;
+    text-align: center;
+}
+.search{
+    position: absolute;
+    right: 0.51rem;
+}
+#search-icon{
+    font-family: iconfont;
+    font-size: 0.22rem;
+    margin:0.06rem 0 0 0.06rem;
+    color: #f87c3e;
+    float: left;
+}
+.more{
+    position: absolute;
+    right: 0;
+}
+#more-icon{
+    font-family: iconfont;
+    font-size: 0.26rem;
+    margin:0.04rem 0 0 0.05rem;
+    color: #f87c3e;
+    float: left;
+}
+.store-information{
+    width: 7.02rem;
+    height: 1.73rem;
+    background: #ffffff;
+    position: absolute;
+    top: 1.09rem;
+    border-radius: 0.1rem;
+    box-shadow: 0 0.05rem 0.15rem 0   rgba(0, 0, 0, 0.17);
+}
+.store-image{
+    width: 1.16rem;
+    height: 1.16rem;
+    background: #83c44e;
+    position: absolute;
+    top: 0.285rem;
+    left: 0.285rem;
+}
+.store-image img{
+    width: 100%;
+    height: 100%;
+}
+.store-container{
+    width: 5.11rem;
+    height: 1.17rem;
+    /*background: #c0a16b;*/
+    position: absolute;
+    top: 0.26rem;
+    left: 1.64rem;
+}
+.store-container p.container-name{
+    font-size: 0.24rem;
+    color: #000000;
+    opacity: 0.6;
+}
+.container-star{
+    width: 1.32rem;
+    height: 0.21rem;
+    position: absolute;
+    left: 1.99rem;
+    bottom:0.88rem;
+}
+.container-star li{
+    float: left;
+}
+#stars{
+    display: flex;
+    justify-content: space-between;
+}
+#stars img{
+    width: 0.22rem;
+    height: 0.22rem;
+}
+.store-container p.container-sales{
+    font-size: 0.2rem;
+    color: #000000;
+    opacity: 0.6;
+}
+.container-favourable{
+    width: 4.61rem;
+    height: 0.42rem;
+    position: absolute;
+    bottom: 0;
+}
+.container-favourable p{
+    font-size: 0.16rem;
+    color: #000000;
+    opacity: 0.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#favourable-special{
+    color: #f96f00;
+}
+.container-favourable p>span{
+    font-size: 0.18rem;
+    color: #f23b3b;
+}
+#container-favourable-put{
+    font-family: iconfont;
+    font-size: 0.22rem;
+    position: absolute;
+    right: 0.28rem;
+    bottom: -0.08rem;
+    color: #000000;
+    opacity: 0.6;
+}
+/*上导航*/
+.small-nav{
+    width: 4.51rem;
+    height: 0.38rem;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.order-sheet{
+    display: block;
+    width: 0.91rem;
+    height: 100%;
+    background: #fb9258;
+    border-radius: 0.19rem;
+    font-size: 0.24rem;
+    color: #ffffff;
+    line-height: 0.38rem;
+    text-align: center;
+}
+.special{
+   background: #fb5858;
+}
+/*店铺详情*/
+.detailed-information{
+    width: 100%;
+    height: 9.18rem;
+    background: #e5e5e5;
+    margin-top: 0.34rem;
+}
+.detailed-left{
+    width: 1.93rem;
+    height: 6.46rem;
+    padding-left: 0.23rem;
+    padding-top: 0.26rem;
+    float: left;
+}
+.detailed-left li{
+    width: 1.46rem;
+    height: 0.48rem;
+    border-radius: 0.21rem;
+    border: 0.03rem solid #f87c3e;
+    margin-bottom: 0.26rem;
+    text-align: center;
+    line-height:0.45rem;
+    color: #f87c3e;
+    font-size: 0.24rem;
+}
+.detailed-left li.detailed-left-special{
+    background: #f87c3e;
+    color: #ffffff;
+}
+.detailed-container{
+    width: 5.32rem;
+    height: 100%;
+    float: right;
+    margin-right: 0.24rem;
+}
+.container-list{
+    width: 100%;
+    height: 1.66rem;
+    background: #ffffff;
+    border-radius: 0.1rem;
+    margin-top: 0.26rem;
+    position: relative;
+}
+.container-list-img{
+    width: 1.06rem;
+    height: 1.06rem;
+    background: #83c44e;
+    position: absolute;
+    left: 0.23rem;
+    top: 0.29rem;
+    border-radius: 0.1rem;
+    box-shadow: 0 0.05rem 0.15rem 0
+            rgba(251, 88, 88, 0.51);
+}
+.container-list-img img{
+    width: 100%;
+    height: 100%;
+}
+.container-rice-name{
+    width: 2.39rem;
+    height: 0.3rem;
+    background: #ffffff;
+    position: absolute;
+    left: 1.78rem;
+    top: 0.24rem;
+    border-bottom: dashed 0.03rem #f4f4f4;
+    line-height: 0.17rem;
+    color: #8d8d8d;
+    font-size: 0.26rem;
+}
+.container-list-price{
+    width: 2.74rem;
+    height: 0.69rem;
+    /*background: #83c44e;*/
+    position: absolute;
+    right: 0.8rem;
+    bottom: 0.33rem;
+    color: #f23b3b;
+}
+.container-list-price p.list-price{
+    font-size: 0.22rem;
+}
+.list-price span.list-price-special1{
+    color: #f96f00;
+}
+.list-price span.list-price-special2{
+    color: #f96f00;
+    font-size: 0.18rem;
+}
+.container-list-price p.list-evaluate{
+    color: #9d9d9d;
+    font-size: 0.18rem;
+}
+.list-evaluate span.list-evaluate-special{
+    font-size: 0.16rem;
+    color: #f23b3b;
+}
+.container-list-price p.list-month-sales{
+    font-size: 0.18rem;
+    color: #f96f00;
+}
+.add-goods{
+    width: 0.34rem;
+    height: 0.34rem;
+    background: #f96f00;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.24rem;
+    bottom: 0.2rem;
+    text-align: center;
+    line-height: 0.34rem;
+    font-size: 0.28rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+/*底部*/
+footer{
+    width: 100%;
+    height: 1.20rem;
+    background: #ffffff;
+
+    bottom: 0;
+}
+#shopping-cart{
+    width: 0.55rem;
+    height: 0.52rem;
+    float: left;
+    margin: 0.21rem 0 0 0.62rem;
+    /*background:#e333e3;*/
+}
+#shopping-cart i{
+    /*font-family: iconfont;*/
+    float: left;
+    font-size: 0.54rem;
+    line-height: 0.52rem;
+    color: #666666;
+}
+#shopping-cart i img{
+    width:0.55rem;
+    height:0.52rem;
+    margin:0 auto;
+}
+.shopping-text{
+    width: 4.13rem;
+    height: 0.47rem;
+    float: left;
+    margin: 0.2rem 0 0 0.69rem;
+}
+.shopping-text p.shopping-text-price{
+    font-size: 0.24rem;
+    color: #000000;
+}
+.shopping-text p.shopping-text-dispatching{
+    font-size: 0.2rem;
+    color: #8d8d8d;
+}
+.balance-accounts{
+    width: 1.28rem;
+    height: 0.38rem;
+    background: #666666;
+    float: left;
+    margin-top: 0.38rem;
+    border-radius: 0.19rem;
+    text-align: center;
+    line-height: 0.38rem;
+    color: #ffffff;
+    font-size: 0.24rem;
+}
